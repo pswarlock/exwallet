@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="935.0" styleClass="mainFxmlClass" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.dashboardController">
+    <children>
+        <Button id="close" fx:id="closeBtn" layoutX="16.0" layoutY="17.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="13.0" prefWidth="13.0" styleClass="btn" stylesheets="@assets/style.css" />
+        <Button id="maximize" fx:id="maximizeBtn" layoutX="40.0" layoutY="17.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#onMaxButtonClick" prefHeight="13.0" prefWidth="13.0" styleClass="btn" stylesheets="@assets/style.css" />
+        <Button id="minimize" fx:id="minimizeBtn" layoutX="66.0" layoutY="17.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#onMinButtonClick" prefHeight="13.0" prefWidth="13.0" styleClass="btn" stylesheets="@assets/style.css" />
+        <Text fx:id="name" layoutX="47.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #002856;" text="Hello There !" wrappingWidth="339.20003356933603">
+            <font>
+                <Font name="Segoe UI Bold" size="38.0" />
+            </font>
+        </Text>
+        <Button fx:id="logOutBtn" layoutX="766.0" layoutY="59.0" mnemonicParsing="false" onAction="#onLogOutBtnClick" prefHeight="40.0" prefWidth="130.0" styleClass="submit" stylesheets="@assets/style.css" text="Log Out">
+            <font>
+                <Font name="Segoe UI Bold" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="57.0" fitWidth="58.0" layoutX="410.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/wallet-alt-solid-24.png" />
+            </image>
+        </ImageView>
+      <AnchorPane layoutX="38.0" layoutY="122.0" prefHeight="214.0" prefWidth="858.0" styleClass="container" stylesheets="@assets/style.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="63.12" offsetY="10.0" radius="22.299999999999997" width="28.08">
+               <color>
+                  <Color opacity="0.5015197396278381" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Text layoutX="31.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFF;" text="Overview" wrappingWidth="244.0">
+               <font>
+                  <Font name="Segoe UI Bold" size="54.0" />
+               </font>
+            </Text>
+              <Button fx:id="reportBtn" layoutX="31.0" layoutY="148.0" mnemonicParsing="false" onAction="#onReportBtnClick" prefHeight="40.0" prefWidth="150.0" styleClass="reportbtn" stylesheets="@assets/style.css" text="Check Report">
+                  <font>
+                      <Font name="Segoe UI Bold" size="15.0" />
+                  </font>
+              </Button>
+            <Text layoutX="740.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFF;" text="Balance" wrappingWidth="95.199951171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="balance" layoutX="368.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFF;" text="------" textAlignment="RIGHT" wrappingWidth="467.1999816894531">
+               <font>
+                  <Font name="Segoe UI Bold" size="54.0" />
+               </font>
+            </Text>
+            <Text layoutX="740.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFF;" text="LKR" textAlignment="RIGHT" wrappingWidth="95.199951171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="38.0" layoutY="354.0" prefHeight="214.0" prefWidth="410.0" styleClass="expense" stylesheets="@assets/style.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="63.12" offsetY="10.0" radius="22.299999999999997" width="28.08">
+               <color>
+                  <Color opacity="0.5015197396278381" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Text layoutX="25.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFF;" text="Total Expenses" wrappingWidth="164.79998779296875">
+               <font>
+                  <Font name="Segoe UI Bold" size="28.0" />
+               </font>
+            </Text>
+            <Button fx:id="expenseBtn" layoutX="20.0" layoutY="160.0" mnemonicParsing="false" onAction="#onExpenseBtnClick" prefHeight="40.0" prefWidth="150.0" styleClass="expensebtn" stylesheets="@assets/style.css" text="Add Expense">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Button>
+            <Text fx:id="expensetxt" layoutX="153.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFF;" text="-------" textAlignment="RIGHT" wrappingWidth="233.60000610351557">
+               <font>
+                  <Font name="Segoe UI Bold" size="54.0" />
+               </font>
+            </Text>
+            <Text layoutX="291.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFF;" text="LKR" textAlignment="RIGHT" wrappingWidth="95.199951171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="485.0" layoutY="354.0" prefHeight="214.0" prefWidth="410.0" styleClass="income" stylesheets="@assets/style.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="63.12" offsetY="10.0" radius="22.299999999999997" width="28.08">
+               <color>
+                  <Color opacity="0.5015197396278381" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Text layoutX="25.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFF;" text="Total Income" wrappingWidth="164.79998779296875">
+               <font>
+                  <Font name="Segoe UI Bold" size="28.0" />
+               </font>
+            </Text>
+            <Button fx:id="incomeBtn" layoutX="20.0" layoutY="160.0" mnemonicParsing="false" onAction="#onIncomeBtnClick" prefHeight="40.0" prefWidth="150.0" styleClass="incomebtn" stylesheets="@assets/style.css" text="Add Income">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Button>
+            <Text fx:id="income" layoutX="128.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFF;" text="-------" textAlignment="RIGHT" wrappingWidth="259.19995117187494">
+               <font>
+                  <Font name="Segoe UI Bold" size="54.0" />
+               </font>
+            </Text>
+            <Text layoutX="293.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFF;" text="LKR" textAlignment="RIGHT" wrappingWidth="95.199951171875">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="reloadBtn" layoutX="625.0" layoutY="59.0" mnemonicParsing="false" onAction="#onReloadBtnClick" prefHeight="40.0" prefWidth="130.0" styleClass="submit" stylesheets="@assets/style.css" text="Reload">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

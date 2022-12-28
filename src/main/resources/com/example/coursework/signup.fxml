@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="935.0" styleClass="mainFxmlClass" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.HelloController">
+    <children>
+        <ImageView fitHeight="378.0" fitWidth="602.0" layoutX="-113.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+            <image>
+                <Image url="@assets/bgimage.png" />
+            </image>
+        </ImageView>
+        <Button id="close" fx:id="closeBtn" layoutX="16.0" layoutY="17.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="13.0" prefWidth="13.0" styleClass="btn" stylesheets="@assets/style.css" />
+        <Button id="maximize" fx:id="maximizeBtn" layoutX="40.0" layoutY="17.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#onMaxButtonClick" prefHeight="13.0" prefWidth="13.0" styleClass="btn" stylesheets="@assets/style.css" />
+        <Button id="minimize" fx:id="minimizeBtn" layoutX="66.0" layoutY="17.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#onMinButtonClick" prefHeight="13.0" prefWidth="13.0" styleClass="btn" stylesheets="@assets/style.css" />
+        <Pane layoutX="42.0" layoutY="190.0" prefHeight="219.0" prefWidth="291.0">
+            <children>
+                <Text fill="WHITE" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Welcome" wrappingWidth="291.2000000000003">
+                    <font>
+                        <Font name="Segoe UI Bold" size="64.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Aboard!" wrappingWidth="255.23985290527344">
+                    <font>
+                        <Font name="Segoe UI Bold" size="64.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="8.0" layoutY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EZ WALLET" wrappingWidth="57.0">
+                    <font>
+                        <Font name="Segoe UI Bold" size="9.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Text fill="WHITE" layoutX="95.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© IIT InfoSchol JavaFX CW" wrappingWidth="164.03973388671875">
+            <font>
+                <Font name="Segoe UI Bold" size="13.0" />
+            </font>
+        </Text>
+        <Text layoutX="513.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #002856;" text="Sign Up" wrappingWidth="142.4000000000001">
+            <font>
+                <Font name="Segoe UI Bold" size="38.0" />
+            </font>
+        </Text>
+        <TextField fx:id="usernameSignup" alignment="CENTER" layoutX="513.0" layoutY="218.0" prefHeight="16.0" prefWidth="334.0" promptText="Username" styleClass="input">
+            <font>
+                <Font name="Segoe UI" size="24.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="passwordSignUp" alignment="CENTER" layoutX="513.0" layoutY="283.0" promptText="Password" styleClass="input" stylesheets="@assets/style.css" />
+        <Button fx:id="signUpBtn" layoutX="513.0" layoutY="347.0" mnemonicParsing="false" onAction="#onSignUpBtnClick" prefHeight="40.0" prefWidth="130.0" styleClass="submit" stylesheets="@assets/style.css" text="Sign Up">
+            <font>
+                <Font name="Segoe UI Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="oldAcc" layoutX="513.0" layoutY="415.0" mnemonicParsing="false" onAction="#onOldAccountClick" prefHeight="40.0" prefWidth="244.0" styleClass="newhere" stylesheets="@assets/style.css" text="Already a user? Sign in!">
+            <font>
+                <Font name="Segoe UI Bold" size="15.0" />
+            </font>
+        </Button>
+      <ImageView fitHeight="57.0" fitWidth="58.0" layoutX="45.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/wallet-alt-solid-24.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+    @FXML
+    void onCloseButtonClick(ActionEvent event) {
+        Stage stage = (Stage) closeBtn.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    void onMaxButtonClick(ActionEvent event) {
+        Stage stage=(Stage) maximizeBtn.getScene().getWindow();
+        if (isMaximized) {
+            stage.setMaximized(false);
+            isMaximized = false;
+
+        }else{
+            stage.setMaximized(true);
+            isMaximized = true;
+        }
+
+
+    }
+
+
+    @FXML
+    void onMinButtonClick(ActionEvent event) {
+        Stage stage=(Stage) minimizeBtn.getScene().getWindow();
+        stage.setIconified(true);
+    }
+
+    @FXML
+    void onNewAccountClick(ActionEvent event) {
+            signUpPane.toFront();
+    }
